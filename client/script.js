@@ -53,7 +53,7 @@ function messageTile(isAI, val, uniqueId) {
     //uniqueId: the unique id of the message
     return (
         `
-        <div class="wrapper" ${isAI && 'ai'}>
+        <div class="wrapper ${isAI && 'ai'}">
             <div class="chat">
                 <div class="profile">
                     <img 
