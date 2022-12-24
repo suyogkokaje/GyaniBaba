@@ -27,7 +27,7 @@ function typeText(element, text) {
         if (i < text.length) {
             //if the typing is not completed,
             //then append the next character
-            element.textContent += text.charAt(i);
+            element.innerHTML += text.charAt(i);
             i++;
         } else {
             clearInterval(interval);//clear the interval as we have reached the end of the text
