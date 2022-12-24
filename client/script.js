@@ -125,7 +125,7 @@ form.addEventListener('submit', handleFormSubmit);
 form.addEventListener('keyup', (e) => {
     //listen for the keyup event
     //and call the handleFormSubmit function when the enter key is pressed
-    if (e.keyCode === 13) {//13 is the keycode for the enter key
+    if (e.key === 'Enter') {//13 is the keycode for the enter key
         handleFormSubmit(e);
     }
 });
