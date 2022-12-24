@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 import cors from 'cors';
 import { Configuration, OpenAIApi } from 'openai';
 
-dotenv.config();//access to .env file
+dotenv.config();//access to .env file   
 
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
@@ -41,7 +41,7 @@ app.post('/', async (req, res) => {
         });
     } catch (err) {
         console.log(err);
-        res.status(500).send({err});
+        res.status(500).send(error || 'Something went wrong');
     }
 });
 
