@@ -49,3 +49,9 @@ app.post('/', async (req, res) => {
 app.listen(5000, () => {
     console.log('Server is running on http://localhost:5000');
 });
+
+//if you get an error as follows
+//Error: listen EADDRINUSE: address already in use :::5000
+//then run the following command in terminal
+//sudo lsof -i :5000
+//kill -9 <PID>
