@@ -57,7 +57,7 @@ function messageTile(isAI, val, uniqueId) {
             <div class="chat">
                 <div class="profile">
                     <img 
-                        src=${isAI ? bot : user} alt="profile" 
+                        src=${isAI ? bot : user}
                     />
                 </div>
                 <div class="message" id=${uniqueId}>${val}</div>
@@ -105,7 +105,7 @@ const handleFormSubmit = async (e) => {
     });
 
     clearInterval(loadInterval);//clear the interval as the response has been received
-    messageDiv.innerHTML = '';//empty the message div
+    messageDiv.innerHTML = " ";//empty the message div
 
     if(response.ok){
         const data = await response.json();
